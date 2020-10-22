@@ -33,9 +33,9 @@ color: #ffffff;}
 .banner h2{
 margin: 0;
 padding: 0;
-font-size: 2.8em;
-font-weight: 1000;
-color: #262626;
+font-size: 3em;
+font-weight: bold;
+color: black;
 text-transform: uppercase;
 }
 .banner p{
@@ -48,7 +48,7 @@ text-transform: uppercase;
 #btnd1{
     display: inline-block;
     margin: 1em 0 0 ;
-    background: #ff2670;
+    background:black;
     color: #fff;
     text-transform: uppercase;
     border: none;
@@ -79,3 +79,101 @@ text-transform: uppercase;
         font-size: 1.8em;
     }
 }
+/*formulaire de recherche*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family:  'Poppins', sans-serif;
+}
+.banner2{
+    min-height: 100vh;
+    background: linear-gradient( rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("/photos/home6.jpg")center/cover no-repeat;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: #fff;
+padding-bottom: 20px;
+
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 420px 420px;
+}
+.card-img{
+    background: url(./photos/homesweethome.jpg)center/cover no-repeat;
+}
+.banner h2{
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    
+}
+.card-content{
+    background: #fff;
+    height: 600px;
+}
+.card-content h3{
+    text-align: center;
+    color: #000;
+    padding: 25px 0 10px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+.form-row{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+form select, form input{
+    display: block;
+    width: 100%;
+    margin: 15px 12px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-weight: 300;
+}
+form input ::placeholder{
+color: #9a9a9a;
+}
+button{
+    color: #fff;
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.7;
+}
+/*Les carousels */
+.col-md-4{
+    display: inline-block;
+    margin-left:-10px;
+  }
+  .col-md-4 img{
+    width:100%;
+    height:auto;
+  }
+    
+  body .carousel-control-prev-icon,
+  body .carousel-indicators li,
+  body .carousel-control-next-icon{
+    background-color:#000;
+  }
+  
+  span.carousel-control-prev-icon {
+   position: relative;
+   bottom: 40px;
+   right: 40px;
+  }
+  
+  span.carousel-control-next-icon {
+   position: relative;
+   bottom: 40px;
+  }
+  

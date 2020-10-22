@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agence Immobilliére</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
@@ -30,7 +31,7 @@
                       <a class="nav-link" href="#">Acceuil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">A Propos</a>
+                        <a class="nav-link" href="aboutUs.html">A Propos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Location </a>
@@ -46,19 +47,461 @@
               </nav>
         </div>
     </header>
+    <!---------------------Background Title------------------------------------>
     <section class="banner">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Tenetur deserunt fugiat ullam libero, maiores qui animi quis rerum. Exercitationem ad laboriosam molestias.</p>
+                    <h2>Bienvenue dans notre agence immobilliére </h2>
+                    <p>
+                   </p>
                       <a href="#" id="btnd1">Lire Plus</a>
                 </div>
             </div>
         </div>
 
     </section>
+    <!---------------Formulaire de recherche--------------------------->
+    <section class="banner2">
+        <h2>Trouver votre maison ici</h2>
+        <div class="card-container">
+            <div class="card-img">
+
+            </div>
+            <div class="card-content">
+                <h3>Recherche Rapide</h3>
+                <form >
+                    <div class="form-row">
+                        <select name="" id="">
+                            <option value="choisir">Vente/Location</option>
+                            <option value="choisir">vente</option>
+                            <option value="choisir">Location</option>
+                        </select>
+                        <select name="TYpe du bien" id="">
+                            <option value="choisir">Type du bien</option>
+                            <option value="choisir">Appartement</option>
+                            <option value="choisir">Maison</option>
+                            <option value="choisir">Terrain</option>
+                            <option value="choisir">Immeuble</option>
+
+                        </select>
+                    </div>
+                    <div class="form-row">    
+                        <select name="TYpe du bien" id="">
+                            <optgroup label="Maison">
+                                <option value="">Villa</option>
+                                <option value="">Maison en Duplex</option>
+                                <option value="">Villa de Maitre</option>
+                                <option value="">Maison en Duplex</option>
+                                <option value="">Etage de villa </option>
+                              </optgroup>
+                              <optgroup label="Appartement">
+                                <option value="">Appartement Triplex</option>
+                                <option value="">Studio</option>
+                                <option value="">Appartement Druplex</option>
+                              </optgroup>
+                              <optgroup label="Terrain">
+                                <option value="">Agricole</option>
+                                <option value="">Commerciale</option>
+                                <option value="">Constructible</option>
+                              </optgroup>
+                              <optgroup label="Pour Professionnels">
+                                <option value="">Bureaux</option>
+                                <option value=""> Locale Commerciale</option>
+                                <option value="">Fonds de Commerce</option>
+                              </optgroup>
+                        </select>
+                        <select name="TYpe du bien" id="">
+                            <option value="choisir">Nombre de Piéce</option>
+                            <option value="choisir">1</option>
+                            <option value="choisir">2</option>
+                            <option value="choisir">3</option>
+                            <option value="choisir">4</option>
+                            <option value="choisir">5</option>
+                            <option value="choisir">6</option>
+                            <option value="choisir">7</option>
+                            <option value="choisir">8</option>
+                            <option value="choisir">9</option>
+
+                            <option value="choisir">10</option>
+
+                        </select>
+
+                    </div>
+                    <div class="form-row">
+                        <input type="text" placeholder="Surface min" >
+                        <input type="text" placeholder="Surface max" >
+                        
+                    </div>
+                    <div class="form-row">
+                        <input type="text" placeholder="Prix min" >
+                        <input type="text" placeholder="Prix max" >
+                    </div>
+                    <div class="form-row">
+                        <button type="button" class="btn btn-dark">Trouver</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!------------Section Nos Coup de Coeur-------------->
+  <section>
+    <div class="container">
+      <div class="h2">
+       Nos Coups de Coeur
+      </div>
+      <div class="container">
+  
+        <div id="demo" class="carousel slide" data-ride="carousel">
+      
+        <!-- Indicators -->
+        <ul class="carousel-indicators mb-0 pb-0">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+      
+        <!-- The slideshow -->
+        <div class="carousel-inner no-padding my-5">
+          <div class="carousel-item active">
+            <div class="col-xs-4 col-sm-4 col-md-4">
+              <a href="#" onclick=abc(this) class="slider_info">
+                <img class="img card-img-top" src="./photos/apar1.jpg"  style="width: 340px; height: 300px;">
+                <div class="card-img-overlay t_img">
+                  <span class="float-left text-uppercase" style="color: black;">Villa</span>
+                  <span class="float-right text-uppercase" style="color: black;">2345 views</span>
+                </div>
+              </a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt quam obcaecati maiores atque labore fugiat tenetur tempore veritatis temporibus!</p>
+      
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4">
+              <a href="#" onclick=abc(this) class="slider_info">
+                <img class="img-fluid card-img-top rounded-bottom" src="./photos/apart2.jpg" style="width: 340px; height: 300px;">
+                <div class="card-img-overlay t_img">
+                  <span class="float-left text-uppercase" style="color: black;">Appartement</span>
+                  <span class="float-right text-uppercase" style="color: black;">2345 views</span>
+                </div>
+              </a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt quam obcaecati maiores atque labore fugiat tenetur tempore veritatis temporibus!</p>
+      
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4">
+              <a href="#" onclick=abc(this) class="slider_info">
+                <img class="img-fluid card-img-top rounded-bottom" src="./photos/apart3.jpeg" style="width: 340px; height: 300px;">
+                <div class="card-img-overlay t_img">
+                  <span class="float-left text-uppercase" style="color: black;">Vente</span>
+                  <span class="float-right text-uppercase" style="color: black;">2345 views</span>
+                </div>
+              </a>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt quam obcaecati maiores atque labore fugiat tenetur tempore veritatis temporibus!
+              </p>
+            </div>
+          </div>
+          <!----2éme slide----->
+          <div class="carousel-item">
+            <div class="col-xs-4 col-sm-4 col-md-4">
+              <a href="#" onclick=abc(this) class="slider_info">
+                <img class="img-fluid card-img-top" src="./photos/apart4.jpg" style="width: 340px; height: 300px;">
+                <div class="card-img-overlay t_img">
+                  <span class="float-left text-uppercase" style="color: black;">article</span>
+                  <span class="float-right text-uppercase" style="color: black;">2345 views</span>
+                </div>
+              </a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt quam obcaecati maiores atque labore fugiat tenetur tempore veritatis temporibus!</p>
+      
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4">
+              <a href="#" onclick=abc(this) class="slider_info">
+                <img class="img-fluid card-img-top" src="./photos/apart5.jpg" style="width: 340px; height: 300px;">
+                <div class="card-img-overlay t_img">
+                  <span class="float-left text-uppercase" style="color: black;">article</span>
+                  <span class="float-right text-uppercase" style="color: black;">2345 views</span>
+                </div>
+              </a>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt quam obcaecati maiores atque labore fugiat tenetur tempore veritatis temporibus!
+              </p>
+      
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4">
+              <a href="#" onclick=abc(this) class="slider_info">
+                <img class="img-fluid card-img-top" src="./photos/apart6.jpg"style="width: 340px; height: 300px;">
+                <div class="card-img-overlay t_img">
+                  <span class="float-left text-uppercase" style="color: black;">article</span>
+                  <span class="float-right text-uppercase" style="color: black;">2345 views</span>
+                </div>
+              </a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt quam obcaecati maiores atque labore fugiat tenetur tempore veritatis temporibus!</p>
+      
+            </div>
+          </div>
+         
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+           <span class="carousel-control-prev-icon sp"></span>
+                      </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+                          <span class="carousel-control-next-icon sp"></span>
+                      </a>
+     
+    </div>
+  </section>
+  <!----------------Les biens a louer ------------------->
+  <div class="container">
+    <div class="h2">
+     Les Biens à Louer
+    </div>
+    <div class="container">
+
+
     
+  <div id="demo" class="carousel slide" data-ride="carousel">
+      
+    <!-- Indicators -->
+    <ul class="carousel-indicators mb-0 pb-0">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+  
+    <!-- The slideshow -->
+    <div class="carousel-inner no-padding my-5">
+      <div class="carousel-item active">
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <a href="#" onclick=abc(this) class="slider_info">
+            <img class="img card-img-top" src="./photos/apar1.jpg"  style="width: 340px; height: 300px;">
+            <div class="card-img-overlay t_img">
+              <span class="float-left text-uppercase" style="color: black;">Villa</span>
+              <span class="float-right text-uppercase" style="color: black;">2345 views</span>
+            </div>
+          </a>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt quam obcaecati maiores atque labore fugiat tenetur tempore veritatis temporibus!</p>
+  
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <a href="#" onclick=abc(this) class="slider_info">
+            <img class="img-fluid card-img-top rounded-bottom" src="./photos/apart2.jpg" style="width: 340px; height: 300px;">
+            <div class="card-img-overlay t_img">
+              <span class="float-left text-uppercase" style="color: black;">Appartement</span>
+              <span class="float-right text-uppercase" style="color: black;">2345 views</span>
+            </div>
+          </a>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt quam obcaecati maiores atque labore fugiat tenetur tempore veritatis temporibus!</p>
+  
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <a href="#" onclick=abc(this) class="slider_info">
+            <img class="img-fluid card-img-top rounded-bottom" src="./photos/apart3.jpeg" style="width: 340px; height: 300px;">
+            <div class="card-img-overlay t_img">
+              <span class="float-left text-uppercase" style="color: black;">Vente</span>
+              <span class="float-right text-uppercase" style="color: black;">2345 views</span>
+            </div>
+          </a>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt quam obcaecati maiores atque labore fugiat tenetur tempore veritatis temporibus!
+          </p>
+        </div>
+      </div>
+      <!----2éme slide----->
+      <div class="carousel-item">
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <a href="#" onclick=abc(this) class="slider_info">
+            <img class="img-fluid card-img-top" src="./photos/apart4.jpg" style="width: 340px; height: 300px;">
+            <div class="card-img-overlay t_img">
+              <span class="float-left text-uppercase" style="color: black;">article</span>
+              <span class="float-right text-uppercase" style="color: black;">2345 views</span>
+            </div>
+          </a>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt quam obcaecati maiores atque labore fugiat tenetur tempore veritatis temporibus!</p>
+  
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <a href="#" onclick=abc(this) class="slider_info">
+            <img class="img-fluid card-img-top" src="./photos/apart5.jpg" style="width: 340px; height: 300px;">
+            <div class="card-img-overlay t_img">
+              <span class="float-left text-uppercase" style="color: black;">article</span>
+              <span class="float-right text-uppercase" style="color: black;">2345 views</span>
+            </div>
+          </a>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt quam obcaecati maiores atque labore fugiat tenetur tempore veritatis temporibus!
+          </p>
+  
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <a href="#" onclick=abc(this) class="slider_info">
+            <img class="img-fluid card-img-top" src="./photos/apart6.jpg"style="width: 340px; height: 300px;">
+            <div class="card-img-overlay t_img">
+              <span class="float-left text-uppercase" style="color: black;">article</span>
+              <span class="float-right text-uppercase" style="color: black;">2345 views</span>
+            </div>
+          </a>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt quam obcaecati maiores atque labore fugiat tenetur tempore veritatis temporibus!</p>
+  
+        </div>
+      </div>
+     
+      </div>
+    </div>
+  
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+       <span class="carousel-control-prev-icon sp"></span>
+                  </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+                      <span class="carousel-control-next-icon sp"></span>
+                  </a>
+ 
+</div>
+</section>
+<!--------------Les Biens a vendre--------------------->
+<div class="container">
+  <div class="h2">
+   Les Biens à Vendre
+  </div>
+  <div class="container">
+
+
+  
+<div id="demo" class="carousel slide" data-ride="carousel">
+    
+  <!-- Indicators -->
+  <ul class="carousel-indicators mb-0 pb-0">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner no-padding my-5">
+    <div class="carousel-item active">
+      <div class="col-xs-4 col-sm-4 col-md-4">
+        <a href="#" onclick=abc(this) class="slider_info">
+          <img class="img card-img-top" src="./photos/apar1.jpg"  style="width: 340px; height: 300px;">
+          <div class="card-img-overlay t_img">
+            <span class="float-left text-uppercase" style="color: black;">Villa</span>
+            <span class="float-right text-uppercase" style="color: black;">2345 views</span>
+          </div>
+        </a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt quam obcaecati maiores atque labore fugiat tenetur tempore veritatis temporibus!</p>
+
+      </div>
+      <div class="col-xs-4 col-sm-4 col-md-4">
+        <a href="#" onclick=abc(this) class="slider_info">
+          <img class="img-fluid card-img-top rounded-bottom" src="./photos/apart2.jpg" style="width: 340px; height: 300px;">
+          <div class="card-img-overlay t_img">
+            <span class="float-left text-uppercase" style="color: black;">Appartement</span>
+            <span class="float-right text-uppercase" style="color: black;">2345 views</span>
+          </div>
+        </a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt quam obcaecati maiores atque labore fugiat tenetur tempore veritatis temporibus!</p>
+
+      </div>
+      <div class="col-xs-4 col-sm-4 col-md-4">
+        <a href="#" onclick=abc(this) class="slider_info">
+          <img class="img-fluid card-img-top rounded-bottom" src="./photos/apart3.jpeg" style="width: 340px; height: 300px;">
+          <div class="card-img-overlay t_img">
+            <span class="float-left text-uppercase" style="color: black;">Vente</span>
+            <span class="float-right text-uppercase" style="color: black;">2345 views</span>
+          </div>
+        </a>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt quam obcaecati maiores atque labore fugiat tenetur tempore veritatis temporibus!
+        </p>
+      </div>
+    </div>
+    <!----2éme slide----->
+    <div class="carousel-item">
+      <div class="col-xs-4 col-sm-4 col-md-4">
+        <a href="#" onclick=abc(this) class="slider_info">
+          <img class="img-fluid card-img-top" src="./photos/apart4.jpg" style="width: 340px; height: 300px;">
+          <div class="card-img-overlay t_img">
+            <span class="float-left text-uppercase" style="color: black;">article</span>
+            <span class="float-right text-uppercase" style="color: black;">2345 views</span>
+          </div>
+        </a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt quam obcaecati maiores atque labore fugiat tenetur tempore veritatis temporibus!</p>
+
+      </div>
+      <div class="col-xs-4 col-sm-4 col-md-4">
+        <a href="#" onclick=abc(this) class="slider_info">
+          <img class="img-fluid card-img-top" src="./photos/apart5.jpg" style="width: 340px; height: 300px;">
+          <div class="card-img-overlay t_img">
+            <span class="float-left text-uppercase" style="color: black;">article</span>
+            <span class="float-right text-uppercase" style="color: black;">2345 views</span>
+          </div>
+        </a>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt quam obcaecati maiores atque labore fugiat tenetur tempore veritatis temporibus!
+        </p>
+
+      </div>
+      <div class="col-xs-4 col-sm-4 col-md-4">
+        <a href="#" onclick=abc(this) class="slider_info">
+          <img class="img-fluid card-img-top" src="./photos/apart6.jpg"style="width: 340px; height: 300px;">
+          <div class="card-img-overlay t_img">
+            <span class="float-left text-uppercase" style="color: black;">article</span>
+            <span class="float-right text-uppercase" style="color: black;">2345 views</span>
+          </div>
+        </a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt quam obcaecati maiores atque labore fugiat tenetur tempore veritatis temporibus!</p>
+
+      </div>
+    </div>
+   
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+     <span class="carousel-control-prev-icon sp"></span>
+                </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon sp"></span>
+                </a>
+
+</div>
+</section>
+<!--------------Contact------------------------>
+<section class="contact">
+    <h1 class="title">Contact</h1>
+    <div class="container">
+        <div class="contact-form row">
+        <div class="form-field col-lg-6">
+            <input type="text" id="name" class="input-text">
+            <label for="name" class="label">Nom</label>
+
+        </div>
+        <div class="form-field col-lg-6">
+            <input type="text" id="email" class="input-text">
+            <label for="email" class="label">Email</label>
+
+        </div>
+        <div class="form-field col-lg-6">
+            <input type="text" id="sujet" class="input-text">
+            <label for="sujet" class="label">Sujet</label>
+
+        </div>
+        <div class="form-field col-lg-6">
+            <input type="text" id="tél" class="input-text">
+            <label for="tél" class="label">Télephone</label>
+
+        </div>
+        <div class="form-field col-lg-6">
+            <input type="text" id="msg" class="input-text">
+            <label for="msg" class="label">Message</label>
+
+        </div>
+        </div>
+    </div>
+</section>
+  
+
 </body>
 </html>
