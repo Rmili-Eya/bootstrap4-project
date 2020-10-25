@@ -17,8 +17,8 @@ color: #262626;
     text-transform: uppercase;
 }
 .navbar-nav{
-   
-    float: ;
+    position:fixed;
+    
     background-color:white;
 }
 .navbar-light .navbar-nav .nav-item .nav-link:hover,
@@ -39,12 +39,15 @@ color: #ffffff;}
 
 }
 .banner h2{
-margin: 0;
-padding: 0;
-font-size: 3em;
-font-weight: bold;
-color: black;
-text-transform: uppercase;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 3em;
+    line-height: 48px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    color: black;
+    
 }
 .banner p{
     margin:1em 0 0;
@@ -56,16 +59,18 @@ text-transform: uppercase;
 #btnd1{
     display: inline-block;
     margin: 1em 0 0 ;
-    background:#e17055;
+   
     color: #fff;
     text-transform: uppercase;
     border: none;
     font-weight: 800;
     padding: 10px 20px;
+  margin-left: 450px;
 }
 #btnd1:hover{
     text-decoration: none;
-    color: #fff;
+    transform: scale(2.3);
+  
 }
 .navbar-light .navbar-toggler{
     border: none;
@@ -99,7 +104,6 @@ body{
 }
 .banner2{
 min-height: 100vh;
-background: linear-gradient( rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("/photos/home6.jpg")center/cover no-repeat;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -133,7 +137,7 @@ padding-bottom: 20px;
 }
 .form-row{
     display: flex;
-    width: 90%;
+    width: 50%;
     margin: 0 auto;
 }
 form select, form input{
@@ -249,16 +253,33 @@ button:hover{
       
   }
   /*footer*/
-  #icone{
-      width: 50px;
-  }
-  footer .container .row{
+ .page-footer{
+     background-color: black;
+     color: white;
+ }
+ .page-footer a{
+     color: white;
+ }
+  /*footer .container .row{
       
     margin-left: 150px;
     width: 100%;
-  }
+  }*/
   /*fleche*/
   #fleche{
       float: right;
       width: 70px;
   }
+  .h2{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 3em;
+    line-height: 48px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    color: black;
+    background: linear-gradient(to right,#636e72 0%,#e17055 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+      }

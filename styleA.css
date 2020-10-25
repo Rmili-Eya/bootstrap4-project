@@ -67,6 +67,11 @@ text-transform: uppercase;
     outline: none;
 
 }
+.navbar-nav{
+    position:fixed;
+    
+    background-color:white;
+}
 /*a propos*/
 span h3
 { 
@@ -91,13 +96,12 @@ span h3::after{
     opacity: -8;
 }
   /*footer*/
-  #icone{
-    width: 50px;
+  .page-footer{
+    background-color: black;
+    color: white;
 }
-footer .container .row{
-    
-  margin-left: 150px;
-  width: 100%;
+.page-footer a{
+    color: white;
 }
 /*fleche*/
 #fleche{
@@ -108,9 +112,7 @@ footer .container .row{
     background: transparent;
 }
 /*Temoignage*/
-body{
-    padding: 40px 0;
-}
+
 
 h3{
     color: #333;

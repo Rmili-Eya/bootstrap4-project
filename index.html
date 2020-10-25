@@ -11,6 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
@@ -35,10 +36,10 @@
                         <a class="nav-link" href="aboutUs.html">A Propos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#location">Location </a>
+                        <a class="nav-link" href="Location.html">Location </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#vente">vente </a>
+                        <a class="nav-link" href="vente.html">vente </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">contact </a>
@@ -54,101 +55,131 @@
     <!---------------------Background Title------------------------------------>
     <section class="banner">
         <div class="container">
-            <div class="row">
+            <div class="row" >
                 <div class="col-sm-6 col-md-8 col-lg-12">
-                    <h2>Bienvenue dans notre agence immobilliére </h2>
-                    <p>
-                   </p>
-                      <a href="#" id="btnd1">Lire Plus</a>
-                </div>
+                    <h2 class="text-center">Bienvenue <br> dans  notre agence immobilliére <br>"Sweet Home"</h2>
+                   
+                </div> 
             </div>
+                  
+               
+    <!---------------MOdal de Formulaire de recherche--------------------------->
+    <button type="button" id="btnd1"  class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalCenter">
+      Trouver Votre Maison ici
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Trouver votre maison ici</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            
+            <section class="banner2">
+           
+              <div class="card-container">
+                  <div class="card-img">
+      
+                  </div>
+                  <div class="card-content">
+                      <h3>Recherche Rapide</h3>
+                      <form >
+                          <div class="form-row">
+                              <select name="" id="" required>
+                                  <option value="choisir">Vente/Location</option>
+                                  <option value="choisir">vente</option>
+                                  <option value="choisir">Location</option>
+                              </select>
+                              <select name="TYpe du bien" id="">
+                                  <option value="choisir">Type du bien</option>
+                                  <option value="choisir">Appartement</option>
+                                  <option value="choisir">Maison</option>
+                                  <option value="choisir">Terrain</option>
+                                  <option value="choisir">Immeuble</option>
+      
+                              </select>
+                          </div>
+                          <div class="form-row" >    
+                              <select name="TYpe du bien" id="" required>
+                                  <optgroup label="Maison">
+                                      <option value="">Villa</option>
+                                      <option value="">Maison en Duplex</option>
+                                      <option value="">Villa de Maitre</option>
+                                      <option value="">Maison en Duplex</option>
+                                      <option value="">Etage de villa </option>
+                                    </optgroup>
+                                    <optgroup label="Appartement">
+                                      <option value="">Appartement Triplex</option>
+                                      <option value="">Studio</option>
+                                      <option value="">Appartement Druplex</option>
+                                    </optgroup>
+                                    <optgroup label="Terrain">
+                                      <option value="">Agricole</option>
+                                      <option value="">Commerciale</option>
+                                      <option value="">Constructible</option>
+                                    </optgroup>
+                                    <optgroup label="Pour Professionnels">
+                                      <option value="">Bureaux</option>
+                                      <option value=""> Locale Commerciale</option>
+                                      <option value="">Fonds de Commerce</option>
+                                    </optgroup>
+                              </select>
+                              <select name="TYpe du bien" id="" required>
+                                  <option value="choisir">Nombre de Piéce</option>
+                                  <option value="choisir">1</option>
+                                  <option value="choisir">2</option>
+                                  <option value="choisir">3</option>
+                                  <option value="choisir">4</option>
+                                  <option value="choisir">5</option>
+                                  <option value="choisir">6</option>
+                                  <option value="choisir">7</option>
+                                  <option value="choisir">8</option>
+                                  <option value="choisir">9</option>
+      
+                                  <option value="choisir">10</option>
+      
+                              </select>
+      
+                          </div>
+                          <div class="form-row">
+                              <input type="text" placeholder="Surface min" required >
+                              <input type="text" placeholder="Surface max" required>
+                              
+                          </div>
+                          <div class="form-row">
+                              <input type="text" placeholder="Prix min" required>
+                              <input type="text" placeholder="Prix max" required >
+                          </div>
+                          <div class="form-row">
+                              <button type="submit" class="btn btn-dark">Trouver</button>
+      
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </section>
+          </div>
+          
         </div>
+      </div>
+    </div>
 
-    </section>
-    <!---------------Formulaire de recherche--------------------------->
-    <section class="banner2">
-        <h2>Trouver votre maison ici</h2>
-        <div class="card-container">
-            <div class="card-img">
 
-            </div>
-            <div class="card-content">
-                <h3>Recherche Rapide</h3>
-                <form >
-                    <div class="form-row">
-                        <select name="" id="">
-                            <option value="choisir">Vente/Location</option>
-                            <option value="choisir">vente</option>
-                            <option value="choisir">Location</option>
-                        </select>
-                        <select name="TYpe du bien" id="">
-                            <option value="choisir">Type du bien</option>
-                            <option value="choisir">Appartement</option>
-                            <option value="choisir">Maison</option>
-                            <option value="choisir">Terrain</option>
-                            <option value="choisir">Immeuble</option>
 
-                        </select>
-                    </div>
-                    <div class="form-row">    
-                        <select name="TYpe du bien" id="">
-                            <optgroup label="Maison">
-                                <option value="">Villa</option>
-                                <option value="">Maison en Duplex</option>
-                                <option value="">Villa de Maitre</option>
-                                <option value="">Maison en Duplex</option>
-                                <option value="">Etage de villa </option>
-                              </optgroup>
-                              <optgroup label="Appartement">
-                                <option value="">Appartement Triplex</option>
-                                <option value="">Studio</option>
-                                <option value="">Appartement Druplex</option>
-                              </optgroup>
-                              <optgroup label="Terrain">
-                                <option value="">Agricole</option>
-                                <option value="">Commerciale</option>
-                                <option value="">Constructible</option>
-                              </optgroup>
-                              <optgroup label="Pour Professionnels">
-                                <option value="">Bureaux</option>
-                                <option value=""> Locale Commerciale</option>
-                                <option value="">Fonds de Commerce</option>
-                              </optgroup>
-                        </select>
-                        <select name="TYpe du bien" id="">
-                            <option value="choisir">Nombre de Piéce</option>
-                            <option value="choisir">1</option>
-                            <option value="choisir">2</option>
-                            <option value="choisir">3</option>
-                            <option value="choisir">4</option>
-                            <option value="choisir">5</option>
-                            <option value="choisir">6</option>
-                            <option value="choisir">7</option>
-                            <option value="choisir">8</option>
-                            <option value="choisir">9</option>
+ 
+</div>
 
-                            <option value="choisir">10</option>
+</section>
+  
 
-                        </select>
+     <!------------------------------------------------------------------>
 
-                    </div>
-                    <div class="form-row">
-                        <input type="text" placeholder="Surface min" >
-                        <input type="text" placeholder="Surface max" >
-                        
-                    </div>
-                    <div class="form-row">
-                        <input type="text" placeholder="Prix min" >
-                        <input type="text" placeholder="Prix max" >
-                    </div>
-                    <div class="form-row">
-                        <button type="button" class="btn btn-dark">Trouver</button>
-
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
+    
     <!------------Section Nos Coup de Coeur-------------->
   <section>
     <div class="container">
@@ -257,7 +288,7 @@
     </div>
   </section>
   <!----------------Les biens a louer ------------------->
-  <div id="location">
+  <div >
   <div class="container">
     <div class="h2">
      Les Biens à Louer
@@ -367,7 +398,7 @@
 </div>
 </section>
 <!--------------Les Biens a vendre--------------------->
-<div id="vente">
+<div >
 <div class="container">
   <div class="h2">
    Les Biens à Vendre
@@ -482,28 +513,28 @@
     <div class="container">
         <div class="contact-form row">
         <div class="form-field col-lg-6">
-            <input type="text" id="name" class="input-text">
+            <input type="text" id="name" class="input-text" class="form-control" required>
             <label for="name" class="label">Nom</label>
 
         </div>
         <div class="form-field col-lg-6">
-            <input type="text" id="email" class="input-text">
-            <label for="email" class="label">Email</label>
+            <input type="text" id="email" class="input-text" class="form-control" required>
+            <label for="email" class="label control-label">Email</label>
+
+        </div>
+        <div class="form-field col-lg-6 control-label">
+            <input type="text" id="sujet" class="input-text" class="form-control" required>
+            <label for="sujet" class="label control-label">Sujet</label>
 
         </div>
         <div class="form-field col-lg-6">
-            <input type="text" id="sujet" class="input-text">
-            <label for="sujet" class="label">Sujet</label>
-
-        </div>
-        <div class="form-field col-lg-6">
-            <input type="text" id="tél" class="input-text">
-            <label for="tél" class="label">Télephone</label>
+            <input type="text" id="tél" class="input-text" class="form-control" required>
+            <label for="tél" class="label control-label">Télephone</label>
 
         </div>
         <div class="form-field col-lg-12">
-            <input type="text" id="msg" class="input-text">
-            <label for="msg" class="label">Message</label>
+            <input type="text" id="msg" class="input-text" class="form-control" required>
+            <label for="msg" class="label control-label">Message</label>
 
         </div>
         <div class="form-field col-lg-12"><br><br>
@@ -513,27 +544,92 @@
         </div>
     </div>
 </section>
-<a href="#nav-f" ><img src="./photos/fleche.png" alt="" id="fleche"></a>
 <!------------------------Footer--------------------------------->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-4 col-sm-4 col-md-4  ">
-              <img src="./photos/email2.png" id="icone" alt="">
+<!-- Footer -->
+<footer class="page-footer font-small  pt-4">
 
-            </div>
-            <div class="col-xs-4 col-sm-4 col-md-4 ">
-             <img src="./photos/fb.jpg" id="icone" alt="">
-            </div>
-            <div class="col-xs-4 col-sm-4 col-md-4 ">
-             <img src="./photos/tél.png" id="icone" alt="">
-            </div>
-        </div>
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase text-danger">Sweet Home</h5>
+        <p>Sweet Home vous accompagne sur l’ensemble de vos projets immobiliers en mettant à votre disposition une équipe de professionnels compétents. </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase text-danger">Liens Rapide</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="index.html">Acceuil</a>
+          </li>
+          <li>
+            <a href="aboutUs.html">A Propos de nous</a>
+          </li>
+          <li>
+            <a href="#!">Location</a>
+          </li>
+          <li>
+            <a href="#!">Vente</a>
+          </li>
+        </ul>
+
+      </div>
+      <a href="https://icons8.com/icon/47751/email"></a>
+
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase text-danger">Links</h5>
+        <ul class="list-unstyled">
+          <li>
+            <img src="https://img.icons8.com/carbon-copy/64/000000/email.png"/>        </li>
+          <li>
+             <i class="far fa-envelope"></i>
+
+          </li>
+          <li>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
     </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/">Sweet Home</a>
+  </div>
+  <!-- Copyright -->
+
 </footer>
+<!-- Footer -->
 
 
-  
 
 </body>
 </html>

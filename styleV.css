@@ -1,0 +1,101 @@
+header{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+.navbar{
+padding: 20px 0;
+  
+}
+.navbar-brand{font-weight: 800;
+text-transform: uppercase;
+font-size: 2em;
+color: #262626;
+}
+.nav-item{
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.navbar-nav{
+    position:fixed;
+    
+    background-color:white;
+}
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .nav-item.active .nav-link {
+background: #262626;
+color: #ffffff;}
+.navbar-light .navbar-nav .nav-item .nav-link{
+    color: #262626;
+    padding: 5px 15px;
+}
+.banner{
+    position: relative;
+    background: url(./photos/home7.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 250px 0 200px;
+
+}
+.banner h2{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 3em;
+    line-height: 48px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    color: black;
+    
+}
+.banner p{
+    margin:1em 0 0;
+    padding: 0;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #262626;
+}
+#btnd1{
+    display: inline-block;
+    margin: 1em 0 0 ;
+   
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 800;
+    padding: 10px 20px;
+  margin-left: 450px;
+}
+#btnd1:hover{
+    text-decoration: none;
+    transform: scale(2.3);
+  
+}
+.navbar-light .navbar-toggler{
+    border: none;
+    color: transparent;
+    border: 2px solid #2f2f2f;
+    border-radius: 0;
+    outline: none;
+
+}
+.navbar-collapse{
+    background: transparent;
+}
+ /*footer*/
+ .page-footer{
+    background-color: black;
+    color: white;
+}
+.page-footer a{
+    color: white;
+}
+/*Cards*/
+body {
+    padding: 2rem 0rem;
+  }
+  
+  .like {
+    font-size: 1.5rem;
+  }
